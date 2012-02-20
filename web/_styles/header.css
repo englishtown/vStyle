@@ -1,0 +1,58 @@
+﻿
+
+/* + Specific padding */
+.et-btn-login
+{
+	padding-left: 12px;
+	padding-right: 12px;
+}
+.et-btn-signup
+{
+	padding-left: 12px;
+	padding-right: 12px;
+}
+.et-btn-signuplogin .et-btn-r
+{
+	padding: 0 20px 0 13px;
+}
+.et-btn-signuplogin .et-btn-l
+{
+	padding: 0 13px 0 21px;
+}
+.et-btn-facebook .et-btn-r
+{
+	padding: 0 12px 0 5px;
+}
+.et-btn-facebook .et-btn-l
+{
+	font-family: Verdana;
+	font-size: 15px;
+	padding: 0 5px 0 9px;
+}
+
+.et-login,
+.et-signup
+{
+    padding-left: 5px;
+    padding-right: 6px;
+}
+
+.et-login input
+{
+    width: 10em;
+}
+.et-signup input
+{
+    width: 12em;
+}
+
+#et-signuplogin .et-login,
+#et-signuplogin .et-signup
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    visibility: hidden;
+}
+

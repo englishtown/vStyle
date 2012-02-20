@@ -1,0 +1,215 @@
+﻿/*========================================================
+    File:        base.css
+    Description: Base CSS Style for All Pages
+    Author:      vince.liu@ef.com
+========================================================*/
+
+/* + Base CSS - Begin */
+
+/* - Keywords */
+/* - Please do not use these keywords as a ordinary CSS Class name, they will be used in JavaScript as a dynamic CSS Class */
+/*
+.et-active
+.et-show,   .et-hide
+.et-first,  .et-last
+.et-prev,   .et-next
+*/
+
+/* - Type Selector */
+strong, strong em, .bold    {   font-weight: 700;   }
+em, em strong, .italic      {   font-style: italic; }
+
+/* - Clear Fix */
+.cf:after,ul.hor:after      {   clear: both; content: "."; display: block; height: 0; visibility: hidden;   }
+.cf,ul.hor                  {   *zoom: 1;       }
+.bfc                        {   overflow: hidden; *zoom: 1;    }
+.clear                      {   clear: both;    }
+
+/* - Float */
+.col-l, ul.hor li           {   float: left; _display: inline;    }
+.col-r                      {   float: right; _display: inline;   }
+
+/* - Position */
+.pos-rel        {   position: relative;     }
+.pos-abs        {   position: absolute;     }
+.pos-fix        {   position: fixed;        }
+
+/* - Align */
+.rtl            {   direction: rtl;         }
+.txtalign-c     {   text-align: center;     }
+.txtalign-l     {   text-align: left;       }
+.txtalign-r     {   text-align: right;      }
+.align-c        {   margin: 0 auto;         }
+.valign-t       {   vertical-align: top;    }
+.valign-m       {   vertical-align: middle; }
+.valign-b       {   vertical-align: bottom; }
+.valign-m-help	{   display: inline-block; vertical-align: middle; font-size: 10px; text-indent: -5000px; overflow: hidden;	}
+
+/* - Width Free/Flexible Button */
+.flexwidth              {   display: inline-block; _display: inline; _zoom: 1;      }
+.flexwidth .fw-l        {   display: block; _display: inline; _zoom: 1;             }
+a.flexwidth             {   cursor: pointer; white-space: nowrap;                   }
+a.flexwidth:hover       {   text-decoration: none;                                  }
+
+/* - Others */
+.ndr a,
+.ndr a:hover,
+a.ndr,
+a.ndr:hover     {   text-decoration: none;  }
+.hidden         {   display: none;          }
+.hand           {   cursor: pointer;        }
+.nohand         {   cursor: default;        }
+.ltspacing      {   letter-spacing: -1px;   }
+.txtindent      {   text-indent: -5000px; overflow: hidden;                         }
+.inlineblock    {   display: inline-block; *display: inline; *zoom: 1;              }
+.breakword      {   word-wrap: break-word; word-break: break-all; overflow:hidden;  }
+.nowrap         {   white-space: nowrap;    }
+.justify        {   text-align: justify;    }
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+/* - Font Size */
+html        {   -webkit-text-size-adjust: none;     }
+.txt-xs     {   font-size: 78%;     }
+.txt-s      {   font-size: 85%;     }
+.txt-m      {   font-size: 90%;     }
+.txt-l      {   font-size: 106%;    }
+.txt-xl     {   font-size: 120%;    }
+.txt-xxl    {   font-size: 125%;    }
+.txt-3xl    {   font-size: 135%;    }
+.txt-4xl    {   font-size: 150%;    }
+.txt-5xl    {   font-size: 170%;    }
+.txt-6xl    {   font-size: 180%;    }
+.txt-7xl    {   font-size: 190%;    }
+.txt-8xl    {   font-size: 210%;    }
+.txt-9xl    {   font-size: 230%;    }
+/* - Pixel */
+.txt-9      {   font-size: 9px;     }
+.txt-10     {   font-size: 10px;    }
+.txt-11     {   font-size: 11px;    }
+.txt-12     {   font-size: 12px;    }
+.txt-13     {   font-size: 13px;    }
+.txt-14     {   font-size: 14px;    }
+.txt-15     {   font-size: 15px;    }
+.txt-16     {   font-size: 16px;    }
+.txt-17     {   font-size: 17px;    }
+.txt-18     {   font-size: 18px;    }
+.txt-20     {   font-size: 20px;    }
+.txt-22     {   font-size: 22px;    }
+.txt-25     {   font-size: 25px;    }
+.txt-32     {   font-size: 32px;    }
+.txt-36     {   font-size: 36px;    }
+
+/* - Gap */
+.mt-1       {   margin-top: 1px;    }
+.mt-3       {   margin-top: 3px;    }
+.mt-5       {   margin-top: 5px;    }
+.mt-8       {   margin-top: 8px;    }
+.mt-10      {   margin-top: 10px;   }
+.mt-13      {   margin-top: 13px;   }
+.mt-15      {   margin-top: 15px;   }
+.mt-18      {   margin-top: 18px;   }
+.mt-20      {   margin-top: 20px;   }
+.mt-25      {   margin-top: 25px;   }
+.mt-30      {   margin-top: 30px;   }
+.mt-35      {   margin-top: 35px;   }
+.mt-40      {   margin-top: 40px;   }
+.mt-45      {   margin-top: 45px;   }
+.mt-50      {   margin-top: 50px;   }
+.mt-60      {   margin-top: 60px;   }
+.mt-70      {   margin-top: 70px;   }
+.mt-80      {   margin-top: 80px;   }
+.mt-90      {   margin-top: 90px;   }
+.mt-100     {   margin-top: 100px;  }
+
+.ml-1       {   margin-left: 1px;   }
+.ml-3       {   margin-left: 3px;   }
+.ml-5       {   margin-left: 5px;   }
+.ml-8       {   margin-left: 8px;   }
+.ml-10      {   margin-left: 10px;  }
+.ml-13      {   margin-left: 13px;  }
+.ml-15      {   margin-left: 15px;  }
+.ml-18      {   margin-left: 18px;  }
+.ml-20      {   margin-left: 20px;  }
+.ml-25      {   margin-left: 25px;  }
+.ml-30      {   margin-left: 30px;  }
+.ml-35      {   margin-left: 35px;  }
+.ml-40      {   margin-left: 40px;  }
+.ml-45      {   margin-left: 45px;  }
+.ml-50      {   margin-left: 50px;  }
+.ml-60      {   margin-left: 60px;  }
+.ml-70      {   margin-left: 70px;  }
+.ml-80      {   margin-left: 80px;  }
+.ml-90      {   margin-left: 90px;  }
+.ml-100     {   margin-left: 100px; }
+
+.mr-1       {   margin-right: 1px;  }
+.mr-3       {   margin-right: 3px;  }
+.mr-5       {   margin-right: 5px;  }
+.mr-8       {   margin-right: 8px;  }
+.mr-10      {   margin-right: 10px; }
+.mr-13      {   margin-right: 13px; }
+.mr-15      {   margin-right: 15px; }
+.mr-18      {   margin-right: 18px; }
+.mr-20      {   margin-right: 20px; }
+.mr-25      {   margin-right: 25px; }
+.mr-30      {   margin-right: 30px; }
+.mr-35      {   margin-right: 35px; }
+.mr-40      {   margin-right: 40px; }
+.mr-45      {   margin-right: 45px; }
+.mr-50      {   margin-right: 50px; }
+
+/* - Text Color */
+.whi,
+.whi a,
+.whi a:hover,
+a.whi:hover         {   color: #fff;    }
+.gry,
+.gry a,
+.gry a:hover,
+a.gry:hover         {   color: #ccc;    }
+.gra,
+.gra a,
+.gra a:hover,
+a.gra:hover         {   color: #999;    }
+.mgry,
+.mgry a,
+.mgry a:hover,
+a.mgry:hover        {   color: #666;    }
+.dark,
+.dark a,
+.dark a:hover,
+a.dark:hover        {   color: #333;    }
+.bla,
+.bla a,
+.bla a:hover,
+a.bla:hover         {   color: #000;    }
+.red,
+.red a,
+.red a:hover,
+a.red:hover         {   color: #f00;    }
+.ora,
+.ora a,
+.ora a:hover,
+a.ora:hover         {   color: #f60;    }
+.yel,
+.yel a,
+.yel a:hover,
+a.yel:hover         {   color: #ff0;    }
+.gre,
+.gre a,
+.gre a:hover,
+a.gre:hover         {   color: #0f0;    }
+.cyan,
+.cyan a,
+.cyan a:hover,
+a.cyan:hover        {   color: #0ff;    }
+.blu,
+.blu a,
+.blu a:hover,
+a.blu:hover         {   color: #00f;    }
+.pur,
+.pur a,
+.pur a:hover,
+a.pur:hover         {   color: #f0f;    }
+
+/* + Base CSS - End */
