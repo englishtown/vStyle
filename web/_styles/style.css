@@ -5,8 +5,12 @@
 	display: inline-block;
 	*display: inline;
 	*zoom: 1;
-	padding: 0;
-	overflow: hidden;
+}
+a:active .et-btn-txt
+{
+    position: relative;
+    top: 1px;
+    left: 0;
 }
 
 /* - Color */
@@ -215,12 +219,6 @@ a.et-rdrect-ora:active
 	line-height: 29px;
 	height: 29px;
 }
-a.et-rdrect-29:active,
-.et-rdrect-29 a.et-btn-l:active,
-.et-rdrect-29 a.et-btn-r:active
-{
-	line-height: 31px;
-}
 .et-rdrect-29 .et-btn-l
 {
     border-radius: 16px 0 0 16px;
@@ -251,12 +249,6 @@ a.et-rdrect-29:active,
 	font-size: 11px;
 	line-height: 19px;
 	height: 19px;
-}
-a.et-rdrect-19:active,
-.et-rdrect-19 a.et-btn-l:active,
-.et-rdrect-19 a.et-btn-r:active
-{
-	line-height: 21px;
 }
 .et-rdrect-19 .et-btn-l
 {
@@ -322,6 +314,7 @@ a.et-rdrect-19:active,
 	cursor: pointer;
 	padding: 1px;
 	border-radius: 11px;
+	vertical-align: middle;/* - TODO: confused */
 }
 .et-btn-close-inner
 {
@@ -346,10 +339,6 @@ a.et-rdrect-19:active,
 		color-stop(0, #536f94),
 		color-stop(1, #304055)
 	);
-}
-a.et-btn-close:active .et-btn-close-inner
-{
-    padding: 4px 3px 2px;
 }
 
     /* for IE6 */
