@@ -47,6 +47,7 @@ precompiled
 tmp
 test-result
 eclipse
+PSD
 server.pid
 node_modules
 foundation
