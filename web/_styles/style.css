@@ -99,12 +99,12 @@ a:active .et-btn-txt
     }
 a.et-rdrect-blu:active
 {
-	box-shadow: 0 1px 4px rgba(86, 86, 86, 0.7) inset, 0 1px 0 rgba(11, 55, 84, 0.16);
+	box-shadow: 0 3px 12px rgba(86, 86, 86, 0.7) inset, 0 1px 0 rgba(11, 55, 84, 0.16);
 }
 .et-rdrect-blu a.et-btn-l:active,
 .et-rdrect-blu a.et-btn-r:active
 {
-	box-shadow: 0 1px 4px rgba(86, 86, 86, 0.7) inset;
+	box-shadow: 0 3px 12px rgba(86, 86, 86, 0.7) inset;
 }
 .et-rdrect-blu .et-btn-l
 {
@@ -137,50 +137,50 @@ a.et-rdrect-blu:active
 {
 	color: #fff;
 	text-shadow: 0 1px 0 rgba(8, 40, 74, 0.75);
-	border: 1px solid #275fa3;
+	border: 1px solid #535f70;
 	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.38) inset, 0 1px 0 rgba(11, 55, 84, 0.16);
 	
 	/* Regular color */
-	background-color: #57a9eb;
+	background-color: #bdc8d1;
 	/* CSS3 background */
-	background-image: linear-gradient(bottom, #3871c0 0%, #57a9eb 100%);
-	background-image: -o-linear-gradient(bottom, #3871c0 0%, #57a9eb 100%);
-	background-image: -moz-linear-gradient(bottom, #3871c0 0%, #57a9eb 100%);
-	background-image: -webkit-linear-gradient(bottom, #3871c0 0%, #57a9eb 100%);
-	background-image: -ms-linear-gradient(bottom, #3871c0 0%, #57a9eb 100%);
+	background-image: linear-gradient(bottom, #768394 0%, #bdc8d1 100%);
+	background-image: -o-linear-gradient(bottom, #768394 0%, #bdc8d1 100%);
+	background-image: -moz-linear-gradient(bottom, #768394 0%, #bdc8d1 100%);
+	background-image: -webkit-linear-gradient(bottom, #768394 0%, #bdc8d1 100%);
+	background-image: -ms-linear-gradient(bottom, #768394 0%, #bdc8d1 100%);
 	background-image: -webkit-gradient(
 		linear,
 		left bottom,
 		left top,
-		color-stop(0, #3871c0),
-		color-stop(1, #57a9eb)
+		color-stop(0, #768394),
+		color-stop(1, #bdc8d1)
 	);
 }
     /* for IE6 */
     * html .et-rdrect-gry
     {
-	    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#57a9eb, endColorstr=#3871c0);
+	    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#bdc8d1, endColorstr=#768394);
     }
     /* for IE7 */
     *+html .et-rdrect-gry
     {
-	    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#57a9eb, endColorstr=#3871c0);
+	    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#bdc8d1, endColorstr=#768394);
     }
     /* for IE8, going last */
     @media \0screen {
 	    .et-rdrect-gry
 	    {
-	        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#57a9eb, endColorstr=#3871c0)";    
+	        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#bdc8d1, endColorstr=#768394)";    
 	    }
     }
 a.et-rdrect-gry:active
 {
-	box-shadow: 0 1px 4px rgba(86, 86, 86, 0.7) inset, 0 1px 0 rgba(11, 55, 84, 0.16);
+	box-shadow: 0 3px 12px rgba(86, 86, 86, 0.7) inset, 0 1px 0 rgba(11, 55, 84, 0.16);
 }
 .et-rdrect-gry a.et-btn-l:active,
 .et-rdrect-gry a.et-btn-r:active
 {
-	box-shadow: 0 1px 4px rgba(86, 86, 86, 0.7) inset;
+	box-shadow: 0 3px 12px rgba(86, 86, 86, 0.7) inset;
 }
 .et-rdrect-gry .et-btn-l
 {
@@ -251,12 +251,12 @@ a.et-rdrect-gry:active
     }
 a.et-rdrect-ora:active
 {
-	box-shadow: 0 1px 4px rgba(86, 86, 86, 0.7) inset, 0 1px 0 rgba(11, 55, 84, 0.16);
+	box-shadow: 0 3px 12px rgba(86, 86, 86, 0.7) inset, 0 1px 0 rgba(11, 55, 84, 0.16);
 }
 .et-rdrect-ora a.et-btn-l:active,
 .et-rdrect-ora a.et-btn-r:active
 {
-	box-shadow: 0 1px 4px rgba(86, 86, 86, 0.7) inset;
+	box-shadow: 0 3px 12px rgba(86, 86, 86, 0.7) inset;
 }
 .et-rdrect-ora .et-btn-l
 {
@@ -402,6 +402,9 @@ a.et-rdrect-ora:active
 	padding: 3px;
 	display: block;
 	border-radius: 9px;
+}
+.et-rdrect-blu .et-btn-close-inner
+{
 	border: 1px solid rgba(149, 164, 185, 0.52);
 	box-shadow: 0 0 3px rgba(0, 0, 0, 0.52) inset;
 	
@@ -421,22 +424,59 @@ a.et-rdrect-ora:active
 		color-stop(1, #304055)
 	);
 }
-
     /* for IE6 */
-    * html .et-rdrect-whi
+    * html .et-rdrect-blu .et-btn-close-inner
     {
 	    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#304055, endColorstr=#536f94);
     }
     /* for IE7 */
-    *+html .et-rdrect-whi
+    *+html .et-rdrect-blu .et-btn-close-inner
     {
 	    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#304055, endColorstr=#536f94);
     }
     /* for IE8, going last */
     @media \0screen {
-	    .et-rdrect-whi
+	    .et-rdrect-blu .et-btn-close-inner
 	    {
 	        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#304055, endColorstr=#536f94)";    
+	    }
+    }
+.et-rdrect-gry .et-btn-close-inner
+{
+	border: 1px solid rgba(149, 164, 185, 0.52);
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.52) inset;
+	
+	/* Regular color */
+	background-color: #3e4146;
+	/* CSS3 background */
+	background-image: linear-gradient(bottom, #61676e 0%, #3e4146 100%);
+	background-image: -o-linear-gradient(bottom, #61676e 0%, #3e4146 100%);
+	background-image: -moz-linear-gradient(bottom, #61676e 0%, #3e4146 100%);
+	background-image: -webkit-linear-gradient(bottom, #61676e 0%, #3e4146 100%);
+	background-image: -ms-linear-gradient(bottom, #61676e 0%, #3e4146 100%);
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, #61676e),
+		color-stop(1, #3e4146)
+	);
+}
+    /* for IE6 */
+    * html .et-rdrect-gry .et-btn-close-inner
+    {
+	    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#3e4146, endColorstr=#61676e);
+    }
+    /* for IE7 */
+    *+html .et-rdrect-gry .et-btn-close-inner
+    {
+	    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#3e4146, endColorstr=#61676e);
+    }
+    /* for IE8, going last */
+    @media \0screen {
+	    .et-rdrect-gry .et-btn-close-inner
+	    {
+	        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#3e4146, endColorstr=#61676e)";    
 	    }
     }
 .et-btn-close-icon
@@ -447,16 +487,6 @@ a.et-rdrect-ora:active
 	text-indent: -9999px;
 	overflow: hidden;
 	background: url(i/icon_x_whi.png) no-repeat left top;
-}
-.et-btn-close-texticon
-{
-	color: #fff;
-	line-height: 9px;
-	font-size: 10px;
-	width: 9px;
-	height: 9px;
-	display: block;
-	overflow: hidden;
 }
 
 /* + Login form input */
