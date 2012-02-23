@@ -1,0 +1,14 @@
+﻿/* + Login form input */
+.et-login-input
+{
+	font-family: Arial;
+	font-size: 10px;
+	color: #878787;
+	line-height: 17px;
+	height: 19px;
+	padding: 0 4px;
+	
+	border-radius: 3px;
+	border: 1px solid #c4c4c4;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12) inset, 0 1px 0 #fff;
+}

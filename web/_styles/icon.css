@@ -1,0 +1,9 @@
+﻿.et-icon-close
+{
+	width: 9px;
+	height: 9px;
+	display: block;
+	text-indent: -9999px;
+	overflow: hidden;
+	background: url(i/icon_x_whi.png) no-repeat left top;
+}
