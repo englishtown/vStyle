@@ -22,17 +22,6 @@ a.et-btn-container
 {
 	font-size: 0;
 }
-.et-nowrap-container
-{
-	font-size: 0;
-    white-space: nowrap;
-    overflow: hidden;
-        
-    transition: width .2s;
-    -moz-transition: width .2s;
-    -webkit-transition: width .2s;
-    -o-transition: width .2s;
-}
 
 /* - Sub Button */
 .et-btn-l,
