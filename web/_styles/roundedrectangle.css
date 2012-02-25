@@ -127,6 +127,51 @@ a.et-rdrect-blu:active
     }
 
 /* ------------------------------------------------------- */
+.et-rdrect-cyan
+{
+	color: #fff;
+	text-shadow: 0 1px 0 rgba(8, 40, 74, 0.75);
+	border: 1px solid rgba(149, 164, 185, 0.52);
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.52) inset;
+	
+	/* Regular color */
+	background-color: #536f94;
+	/* CSS3 background */
+	background-image: linear-gradient(bottom, #304055 0%, #536f94 100%);
+	background-image: -o-linear-gradient(bottom, #304055 0%, #536f94 100%);
+	background-image: -moz-linear-gradient(bottom, #304055 0%, #536f94 100%);
+	background-image: -webkit-linear-gradient(bottom, #304055 0%, #536f94 100%);
+	background-image: -ms-linear-gradient(bottom, #304055 0%, #536f94 100%);
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, #304055),
+		color-stop(1, #536f94)
+	);
+}
+    /* for IE6 */
+    * html .et-rdrect-cyan
+    {
+        border: 1px solid #bfc6d1;
+	    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#536f94, endColorstr=#304055);
+    }
+    /* for IE7 */
+    *+html .et-rdrect-cyan
+    {
+        border: 1px solid #bfc6d1;
+	    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#536f94, endColorstr=#304055);
+    }
+    /* for IE8, going last */
+    @media \0screen {
+	    .et-rdrect-cyan
+	    {
+            border: 1px solid #bfc6d1;
+	        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#536f94, endColorstr=#304055)";    
+	    }
+    }
+
+/* ------------------------------------------------------- */
 .et-rdrect-gry
 {
 	color: #fff;
@@ -280,6 +325,12 @@ a.et-rdrect-ora:active
 
 /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
 /* - Height */
+.et-rdrect-round
+{
+	border-radius: 500px;
+}
+
+/* ------------------------------------------------------- */
 .et-rdrect-29
 {
 	font-size: 13px;
