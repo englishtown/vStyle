@@ -249,6 +249,10 @@
 	        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#bdc8d1, endColorstr=#768394)";    
 	    }
     }
+a.et-rdrect-gra:active
+{
+	box-shadow: 0 3px 12px rgba(86, 86, 86, 0.7) inset, 0 1px 0 rgba(11, 55, 84, 0.16);
+}
     
 /* ------------------------------------------------------- */
 .et-rdrect-blu
