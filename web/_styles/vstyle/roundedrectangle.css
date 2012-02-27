@@ -474,7 +474,7 @@ a.et-rdrect-ora:active
 
 /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
 /* - Height */
-.et-rdrect-round
+.et-rdrect-circle
 {
 	border-radius: 500px;
 }
