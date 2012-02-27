@@ -20,7 +20,7 @@
     var msWidth = 200,
         msFade = 800;
 
-    var widthBtnSignupLogin = $btnSignupLogin.outerWidth() - 13;
+    var widthBtnSignupLogin = $btnSignupLogin.outerWidth() + 12;
     $login.width(widthBtnSignupLogin);
     $signup.width(widthBtnSignupLogin);
 
@@ -33,7 +33,8 @@
 
 
     var showLogin = function () {
-        $btnSignupLogin.hide();
+        //$btnSignupLogin.hide();
+        $btnSignupLogin.css("opacity", "0");
         $login
         .css("visibility", "visible")
         .width(widthLogin);
@@ -44,11 +45,13 @@
             $login.css("visibility", "hidden");
         };
         window.setTimeout(fn, msWidth);
-        $btnSignupLogin.fadeIn(msFade);
+        //$btnSignupLogin.fadeIn(msFade);
+        $btnSignupLogin.css("opacity", "1");
         $login.width(widthBtnSignupLogin);
     },
     showSignup = function () {
-        $btnSignupLogin.hide();
+        //$btnSignupLogin.hide();
+        $btnSignupLogin.css("opacity", "0");
         $signup
         .css("visibility", "visible")
         .width(widthSignup);
@@ -59,7 +62,8 @@
             $signup.css("visibility", "hidden");
         };
         window.setTimeout(fn, msWidth);
-        $btnSignupLogin.fadeIn(msFade);
+        //$btnSignupLogin.fadeIn(msFade);
+        $btnSignupLogin.css("opacity", "1");
         $signup.width(widthBtnSignupLogin);
     };
 

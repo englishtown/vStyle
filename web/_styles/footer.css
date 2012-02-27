@@ -1,0 +1,18 @@
+﻿.et-footer-nav,
+.et-footer-helptext,
+.et-footer-copy
+{
+    color: #495361;
+}
+.et-footer-nav a
+{
+    cursor: pointer;
+}
+.et-footer-helptext
+{
+    cursor: help;
+}
+.et-footer-helptext .et-texticon-tel
+{
+    color: #4f5a68;
+}

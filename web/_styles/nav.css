@@ -1,0 +1,112 @@
+﻿.et-nav-main li
+{
+    margin: 0 4px;
+    position: relative;
+}
+.et-nav-main-menu
+{
+    cursor: pointer;
+    color: #233d5b;
+    font-weight: 700;
+    line-height: 19px;
+    padding: 0 10px;
+    display: inline-block;
+}
+#et-nav .et-active .et-nav-main-menu
+{
+    color: #fff;
+    border-radius: 10px;
+    background-color: #4a91d8;
+}
+
+.et-nav-subcontainer
+{
+    padding: 4px 3px 3px 14px;
+    display: none;
+    position: absolute;
+    left: -14px;
+    background: url(../_imgs/bg_nav_subcontainer.png) 0 4px no-repeat;
+}
+.et-nav-main li:hover .et-nav-subcontainer
+{
+    display: block;
+}
+.et-nav-sc-main
+{
+    padding-bottom: 13px;
+    background-color: rgba(56, 63, 72, 0.95);
+    box-shadow: 0 1px 9px rgba(0, 0, 0, 0.22);
+}
+.et-nav-sc-topline
+{
+    background-color: #367fc9;
+    height: 3px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.22);
+}
+.et-nav-sc-main,
+.et-nav-sc-topline
+{
+    border-radius: 2px 2px 0 0;
+}
+.et-nav-sub
+{
+    margin-bottom: 13px;
+}
+.et-nav-sc-main .et-nav-sub li
+{
+    float: none;
+    margin: 0 0 1px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.22);
+    background-color: rgba(85, 91, 100, 0.3);
+}
+.et-nav-sub li:hover
+{
+	/* Regular color */
+    background-color: #6b717c;
+	/* CSS3 background */
+	background-image: linear-gradient(bottom, #696e79 0%, #797f89 100%);
+	background-image: -o-linear-gradient(bottom, #696e79 0%, #797f89 100%);
+	background-image: -moz-linear-gradient(bottom, #696e79 0%, #797f89 100%);
+	background-image: -webkit-linear-gradient(bottom, #696e79 0%, #797f89 100%);
+	background-image: -ms-linear-gradient(bottom, #696e79 0%, #797f89 100%);
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, #696e79),
+		color-stop(1, #797f89)
+	);
+}
+.et-nav-sub a
+{
+    display: block;
+    white-space: nowrap;
+    color: #fff;
+    line-height: 30px;
+    font-weight: bold;
+    padding: 0 25px 0 40px;
+    cursor: pointer;
+}
+.et-nav-sub-gl
+{
+    background: url(../_imgs/icon_gl.png) no-repeat 13px center;
+}
+.et-nav-sub-pl
+{
+    background: url(../_imgs/icon_pl.png) no-repeat 13px center;
+}
+.et-nav-sub-eft
+{
+    background: url(../_imgs/icon_eft.png) no-repeat 13px center;
+}
+
+.et-nav-sc-helptext
+{
+    color: #acb1b8;
+    padding-left: 15px;
+    line-height: 1.6em;
+}
+.et-nav-sc-helptext a
+{
+    cursor: pointer;
+}

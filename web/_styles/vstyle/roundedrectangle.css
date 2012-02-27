@@ -17,7 +17,7 @@
 	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.38) inset, 0 1px 4px rgba(0, 0, 0, 0.24);
 	
 	/* Regular color */
-	background-color: rgba(255, 255, 255, 0.06);
+	background-color: #f6f6f6;
 	/* CSS3 background */
 	background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.06) 0%, rgba(255, 255, 255, 0.06) 100%);
 	background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.06) 0%, rgba(255, 255, 255, 0.06) 100%);
@@ -474,7 +474,7 @@ a.et-rdrect-ora:active
 
 /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
 /* - Height */
-.et-rdrect-circle
+.et-circle
 {
 	border-radius: 500px;
 }

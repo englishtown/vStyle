@@ -39,6 +39,12 @@ body
 	background-repeat: repeat-x;
 	background-position: left bottom;
 }
+
+#et-nav
+{
+    margin-top: 33px;
+}
+
 #et-footer
 {
     height: 139px;
@@ -50,4 +56,14 @@ body
 	background-image: url(../_imgs/bg_footer.png);
 	background-repeat: repeat-x;
 	background-position: left bottom;
+}
+
+/* + Common styles */
+.et-texticon-tel
+{
+    color: #4f5a68;
+    display: inline-block;
+    line-height: 31px;
+    padding-left: 18px;
+    background: url(../_imgs/icon_phone.png) no-repeat left center;
 }
