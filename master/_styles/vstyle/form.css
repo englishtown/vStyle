@@ -58,11 +58,12 @@
 .et-chk-dial
 {
     width: 17px;
+    margin-left: 0;
 	
-    transition: margin-left .1s;
-    -moz-transition: margin-left .1s;
-    -webkit-transition: margin-left .1s;
-    -o-transition: margin-left .1s;
+    transition: margin 0.1s ease 0s;
+    -moz-transition: margin 0.1s ease 0s;
+    -webkit-transition: margin 0.1s ease 0s;
+    -o-transition: margin 0.1s ease 0s;
 
 	border: 1px solid #c5cfd9;
 	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.38) inset, 0 1px 4px rgba(0, 0, 0, 0.24);
@@ -100,7 +101,8 @@
 	        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff9006, endColorstr=#ff7502)";    
 	    }
     }
-.et-chk-ora:active .et-chk-dial
+.et-chk-ora:active .et-chk-dial,
+.et-chk-dial:active
 {
 	box-shadow: 0 3px 5px rgba(86, 86, 86, 0.3) inset;
 }
