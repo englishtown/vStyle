@@ -1,0 +1,53 @@
+﻿html
+{
+    background-color: #cdd2d8;
+}
+body
+{
+    font: 400 75%/1.2em Arial, Helvetica, sans-serif;
+}
+
+.et-pagewidth
+{
+    width: 81.15em;
+    margin: 0 auto;
+}
+/* for 480px width screen */
+@media only screen and (max-width:240px){
+    .et-pagewidth
+    {
+        width: 20em;
+    }
+}
+/* for 480px width screen */
+@media only screen and (min-width:241px) and (max-width:480px){
+    .et-pagewidth
+    {
+        width: 40em;
+    }
+}
+
+#et-header
+{
+    height: 82px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.21);
+	
+	/* Regular color */
+	background-color: #fff;
+	/* CSS3 background */
+	background-image: url(../_imgs/bg_header.png);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+}
+#et-footer
+{
+    height: 139px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.21);
+	
+	/* Regular color */
+	background-color: #fff;
+	/* CSS3 background */
+	background-image: url(../_imgs/bg_footer.png);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+}

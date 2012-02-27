@@ -4,11 +4,17 @@
     <meta charset="utf-8" />
     <title>|Englishtown Masterpage |</title>
 
-    <link rel="Stylesheet" href="_styles/base.css" type="text/css" />
-    <link rel="Stylesheet" href="_styles/roundedrectangle.css" type="text/css" />
-    <link rel="Stylesheet" href="_styles/icon.css" type="text/css" />
-    <link rel="Stylesheet" href="_styles/form.css" type="text/css" />
-    <link rel="Stylesheet" href="_styles/button.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+
+    <link rel="Stylesheet" href="_styles/reset.css" type="text/css" />
+
+    <link rel="Stylesheet" href="_styles/vstyle/base.css" type="text/css" />
+    <link rel="Stylesheet" href="_styles/vstyle/roundedrectangle.css" type="text/css" />
+    <link rel="Stylesheet" href="_styles/vstyle/icon.css" type="text/css" />
+    <link rel="Stylesheet" href="_styles/vstyle/form.css" type="text/css" />
+    <link rel="Stylesheet" href="_styles/vstyle/button.css" type="text/css" />
+
+    <link rel="Stylesheet" href="_styles/master.css" type="text/css" />
     <link rel="Stylesheet" href="_styles/header.css" type="text/css" />
     <link rel="Stylesheet" href="_styles/style.css" type="text/css" />
 
@@ -16,10 +22,103 @@
     <script type="text/javascript" src="_scripts/master.js"></script>
 
 </head>
-<body style="padding: 0; margin: 0; font-family: Tahoma;">
-    <h1>
-        <img src="_imgs/logo.png" width="270" height="73" alt="Englishtown" />
-    </h1>
+<body>
+    <header id="et-header">
+        <div class="et-pagewidth cf">
+            <h1 class="col-l">
+                <img src="_imgs/logo.png" width="270" height="73" alt="Englishtown" />
+            </h1>
+            <nav class="col-l">
+                <a>
+                    <span>SCHOOL</span>
+                </a>
+                <a class="active">
+                    <span>LIVE CLASS</span>
+                </a>
+                <a>
+                    <span>PEOPLE</span>
+                </a>
+            </nav>
+            <strong>900 35 26 51</strong>
+            <div id="et-signuplogin" class="col-r pos-rel">
+                <div class="et-rdrect et-btn et-rdrect-blu et-rdrect-29 et-btn-container et-btn-signuplogin col-r">
+                    <a class="et-btn-l"><span class="et-btn-txt">Signup for free</span></a><a class="et-btn-r"><span class="et-btn-txt">Login</span></a>
+                </div>
+                <div class="et-login et-rdrect et-rdrect-29 et-rdrect-whi et-rdrect-nowrap-container col-r">
+			        <div class="et-rdrect-l">
+           		        <a class="et-rdrect et-btn et-rdrect-blu et-btn-close et-rdrect-circle valign-m" title="Close">
+	                        <span class="et-btn-close-inner et-rdrect-circle">
+	                            <span class="et-icon-9x9 et-icon-close et-btn-txt">Close</span>
+	                        </span>
+	                    </a>
+	                    <input type="email" class="et-login-input ml-13 valign-m" placeholder="email" />
+	                    <input type="password" class="et-login-input ml-10 valign-m" placeholder="password" />
+	                    <a class="et-rdrect et-btn et-rdrect-blu et-rdrect-19 et-btn-single et-btn-login ml-10 mr-1 valign-m">
+	                        <span class="et-btn-txt">Login</span>
+	                    </a>
+				        <span class="valign-m-help">&nbsp;</span>
+			        </div>
+                </div>
+                <div class="et-signup et-rdrect et-rdrect-29 et-rdrect-whi et-rdrect-nowrap-container col-r">
+			        <div class="et-rdrect-l">
+	                    <a class="et-rdrect et-btn et-rdrect-blu et-btn-close et-rdrect-circle valign-m" title="Close">
+	                        <span class="et-btn-close-inner et-rdrect-circle">
+	                            <span class="et-icon-9x9 et-icon-close et-btn-txt">Close</span>
+	                        </span>
+	                    </a>
+	                    <input type="email" class="et-login-input ml-13 valign-m" placeholder="email" />
+	                    <a class="et-rdrect et-btn et-rdrect-ora et-rdrect-19 et-btn-single et-btn-signup ml-10 valign-m">
+	                        <span class="et-btn-txt">Signup</span>
+	                    </a>
+	                    <span class="txt-10 valign-m ml-5">or</span>
+	                    <a class="et-rdrect et-btn et-rdrect-blu et-rdrect-19 et-btn-container et-btn-facebook valign-m ml-5 mr-1">
+	                        <span class="et-btn-l"><span class="et-btn-txt">f</span></span><span class="et-btn-r"><span class="et-btn-txt">Connect</span></span>
+	                    </a>
+			        </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="et-content">
+        <div style="height: 300px;"></div>
+    </div>
+    <footer id="et-footer">
+        <div class="et-pagewidth cf">
+            <div class="col-l">
+                <ul class="hor">
+                    <li>
+                        <a>Contact Us</a>
+                    </li>
+                    <li>
+                        All EF Programs
+                    </li>
+                </ul>
+                <p>
+                    <strong>Questions?</strong>
+                    <span>Call us</span>
+                    <strong>900 35 26 51</strong>
+                </p>
+                <p>Copyright &copy; 1996-2012 Englishtown B.V. All rights reserved.</p>
+                <p>Englishtown and Englishtown.com are registered trademarks.</p>
+            </div>
+            <div class="col-r">
+                <div class="et-rdrect et-rdrect-29 et-rdrect-whi et-rdrect-nowrap-container hand">
+			        <div class="et-rdrect-l">
+                        <img src="_styles/vstyle/i/flag_usa.png" width="16" height="11" alt="American English" class="valign-m ml-10" />
+                        <span class="txt-13 cyan bold valign-m ml-8" style="color: #4c5765;">Change language</span>
+                        <span class="et-rdrect et-rdrect-circle et-rdrect-indigo valign-m ml-13 mr-5">
+                            <span class="et-icon-9x9 et-icon-arrow-whi-b"></span>
+                        </span>
+			        </div>
+                </div>
+                <div class="et-rdrect et-rdrect-29 et-rdrect-whi et-rdrect-nowrap-container hand">
+			        <div class="et-rdrect-l">
+                        <span class="txt-13 cyan bold valign-m ml-8" style="color: #4c5765;">Help & FAQ</span>
+			        </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
