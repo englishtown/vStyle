@@ -1,10 +1,12 @@
-﻿var signuplogin = function ($el) {
+﻿
+!function () {
+    var signuplogin = function ($el) {
 
-    if (!$el || $el.length === 0) {
-        return;
-    }
+        if (!$el || $el.length === 0) {
+            return;
+        }
 
-    var $btnSignupLogin = $el.find(".et-btn-signuplogin"),
+        var $btnSignupLogin = $el.find(".et-btn-signuplogin"),
         $btnLogin = $btnSignupLogin.find(".et-btn-r"),
         $btnSignup = $btnSignupLogin.find(".et-btn-l"),
         $login = $el.find(".et-login"),
@@ -17,14 +19,14 @@
         $btnCloseLogin = $login.find(".et-btn-close"),
         $btnCloseSignup = $signup.find(".et-btn-close");
 
-    var msWidth = 200,
+        var msWidth = 200,
         msFade = 800;
 
-    var widthBtnSignupLogin = $btnSignupLogin.outerWidth() + 12;
-    $login.width(widthBtnSignupLogin);
-    $signup.width(widthBtnSignupLogin);
+        var widthBtnSignupLogin = $btnSignupLogin.outerWidth() + 12;
+        $login.width(widthBtnSignupLogin);
+        $signup.width(widthBtnSignupLogin);
 
-    var widthLogin = $submitLogin.position().left -
+        var widthLogin = $submitLogin.position().left -
                         $btnCloseLogin.position().left +
                         $submitLogin.outerWidth(true),
         widthSignup = $submitFacebook.position().left -
@@ -32,14 +34,14 @@
                         $submitFacebook.outerWidth(true);
 
 
-    var showLogin = function () {
-        //$btnSignupLogin.hide();
-        $btnSignupLogin.css("opacity", "0");
-        $login
+        var showLogin = function () {
+            //$btnSignupLogin.hide();
+            $btnSignupLogin.css("opacity", "0");
+            $login
         .css("visibility", "visible")
         .width(widthLogin);
-        $inputLoginEmail.focus();
-    },
+            $inputLoginEmail.focus();
+        },
     hideLogin = function () {
         var fn = function () {
             $login.css("visibility", "hidden");
@@ -68,34 +70,33 @@
     };
 
 
-    $btnLogin.click(showLogin);
-    $btnSignup.click(showSignup);
+        $btnLogin.click(showLogin);
+        $btnSignup.click(showSignup);
 
-    $btnCloseLogin.click(hideLogin);
-    $btnCloseSignup.click(hideSignup);
+        $btnCloseLogin.click(hideLogin);
+        $btnCloseSignup.click(hideSignup);
 
-};
+    };
 
-var $elHeader = $("#et-header"),
+    var $elHeader = $("#et-header"),
     $elSignupLogin = $("#et-signuplogin");
 
-signuplogin($elSignupLogin);
+    signuplogin($elSignupLogin);
 
-
-var $elHeaderProfile = $elHeader.find(".et-header-profile"),
+    var $elHeaderProfile = $elHeader.find(".et-header-profile"),
     $elHeaderPicname = $elHeaderProfile.find(".et-header-picname"),
     $elHeaderPicnameIcon = $elHeaderPicname.find(".et-circle"),
     $elHeaderPicnameIconDirection = $elHeaderPicnameIcon.find("> span"),
     $elProfileBar = $("#et-profilebar");
 
-$elSignupLogin.find(".et-btn-login").click(function () {
-    $elSignupLogin.hide();
-    $elHeader.find(".et-header-hotline").hide();
-    $elHeaderProfile.show();
-});
+    $elSignupLogin.find(".et-btn-login").click(function () {
+        $elSignupLogin.hide();
+        $elHeader.find(".et-header-hotline").hide();
+        $elHeaderProfile.show();
+    });
 
-$elHeaderPicname.click(function () {
-    var $this = $(this),
+    $elHeaderPicname.click(function () {
+        var $this = $(this),
         normalClass = "et-rdrect-whi",
         activeClass = "et-rdrect-lightgra",
         normalIconClass = "et-rdrect-indigo-concave",
@@ -104,31 +105,34 @@ $elHeaderPicname.click(function () {
         activeDirectionClass = "et-icon-arrow-whi-t",
         normalProfileClass = "et-profilebar-hide",
         activeProfileClass = "et-profilebar-show";
-    if ($this.hasClass(activeClass)) {
-        $this.removeClass(activeClass).addClass(normalClass);
-        $elHeaderPicnameIcon.removeClass(activeIconClass).addClass(normalIconClass);
-        $elHeaderPicnameIconDirection.removeClass(activeDirectionClass).addClass(normalDirectionClass);
-        $elProfileBar.removeClass(activeProfileClass).addClass(normalProfileClass);
-    }
-    else {
-        $this.removeClass(normalClass).addClass(activeClass);
-        $elHeaderPicnameIcon.removeClass(normalIconClass).addClass(activeIconClass);
-        $elHeaderPicnameIconDirection.removeClass(normalDirectionClass).addClass(activeDirectionClass);
-        $elProfileBar.removeClass(normalProfileClass).addClass(activeProfileClass);
-    }
-});
+        if ($this.hasClass(activeClass)) {
+            $this.removeClass(activeClass).addClass(normalClass);
+            $elHeaderPicnameIcon.removeClass(activeIconClass).addClass(normalIconClass);
+            $elHeaderPicnameIconDirection.removeClass(activeDirectionClass).addClass(normalDirectionClass);
+            $elProfileBar.removeClass(activeProfileClass).addClass(normalProfileClass);
+        }
+        else {
+            $this.removeClass(normalClass).addClass(activeClass);
+            $elHeaderPicnameIcon.removeClass(normalIconClass).addClass(activeIconClass);
+            $elHeaderPicnameIconDirection.removeClass(normalDirectionClass).addClass(activeDirectionClass);
+            $elProfileBar.removeClass(normalProfileClass).addClass(activeProfileClass);
+        }
+    });
 
-$elProfileBar.find(".et-profilebar-logout").click(function () {
-    location.reload();
-});
+    $elProfileBar.find(".et-profilebar-logout").click(function () {
+        location.reload();
+    });
 
-$elProfileBar.find(".et-profilebar-challenge").toggle(
-    function () {
-        $(this).find(".et-profilebar-challenge-progresstext").text(90);
-        $(this).find(".et-profilebar-challenge-progressbar").width("90%");
-    },
-    function () {
-        $(this).find(".et-profilebar-challenge-progresstext").text(35);
-        $(this).find(".et-profilebar-challenge-progressbar").width("35%");
-    }
-);
+    $elProfileBar.find(".et-profilebar-challenge").toggle(
+        function () {
+            var $this = $(this);
+            $this.find(".et-profilebar-challenge-progresstext").text(90);
+            $this.find(".et-profilebar-challenge-progressbar").width("90%");
+        },
+        function () {
+            var $this = $(this);
+            $this.find(".et-profilebar-challenge-progresstext").text(35);
+            $this.find(".et-profilebar-challenge-progressbar").width("35%");
+        }
+    );
+} ();
