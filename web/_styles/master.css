@@ -38,6 +38,9 @@ body
 	background-image: url(../_imgs/bg_header.png);
 	background-repeat: repeat-x;
 	background-position: left bottom;
+	
+	position: relative;
+	z-index: 2;
 }
 
 #et-nav

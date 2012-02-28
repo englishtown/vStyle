@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>|Englishtown Masterpage |</title>
+    <title>Englishtown Masterpage</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
 
@@ -17,6 +17,7 @@
 
     <link rel="Stylesheet" href="_styles/master.css" type="text/css" />
     <link rel="Stylesheet" href="_styles/nav.css" type="text/css" />
+    <link rel="Stylesheet" href="_styles/profile.css" type="text/css" />
     <link rel="Stylesheet" href="_styles/footer.css" type="text/css" />
     <link rel="Stylesheet" href="_styles/signuplogin.css" type="text/css" />
 
@@ -78,8 +79,7 @@
                 </ul>
             </nav>
             <div class="col-r mt-25">
-                <strong class="et-texticon-tel mr-20 txt-xl alpha60 hidden-im">900 35 26 51</strong>
-                <div id="et-signuplogin" class="pos-rel col-r hidden-im">
+                <div id="et-signuplogin" class="pos-rel col-r">
                     <div class="et-rdrect et-btn et-rdrect-blu et-rdrect-29 et-btn-container et-btn-signuplogin col-r">
                         <a class="et-btn-l"><span class="et-btn-txt">Signup for free</span></a><a class="et-btn-r"><span class="et-btn-txt">Login</span></a>
                     </div>
@@ -116,26 +116,71 @@
 			            </div>
                     </div>
                 </div>
-                <ul class="hor inlineblock">
-                    <li>
-                        <img src="_imgs/icon_mail.png" />
-                    </li>
-                    <li>
-                        <img src="_imgs/icon_horn.png" />
-                    </li>
-                </ul>
-                <div class="et-rdrect et-rdrect-29 et-rdrect-whi et-rdrect-nowrap-container hand col-r">
-			        <div class="et-rdrect-l">
-                        <img src="_styles/vstyle/i/pic_mauricio.png" width="20" height="20" alt="Mauricio" class="valign-m ml-10" />
-                        <span class="txt-13 cyan bold valign-m ml-8" style="color: #4c5765;">Mauricio E.</span>
-                        <span class="et-rdrect et-circle et-rdrect-indigo valign-m ml-13 mr-5">
-                            <span class="et-icon-9x9 et-icon-arrow-whi-b"></span>
-                        </span>
-			        </div>
+                <div class="et-header-hotline mr-20 col-r">
+                    <strong class="et-texticon-tel txt-xl alpha60">900 35 26 51</strong>
+                </div>
+                <div class="et-header-profile col-r hidden">
+                    <div class="et-header-picname et-rdrect et-rdrect-29 et-rdrect-whi et-rdrect-nowrap-container hand col-r">
+			            <div class="et-rdrect-l">
+                            <img src="_styles/vstyle/i/pic_mauricio.png" width="20" height="20" alt="Mauricio" class="valign-m ml-10" />
+                            <span class="txt-13 cyan bold valign-m ml-8" style="color: #4c5765;">Mauricio E.</span>
+                            <span class="et-rdrect et-circle et-rdrect-indigo-concave valign-m ml-13 mr-5">
+                                <span class="et-icon-9x9 et-icon-arrow-whi-b"></span>
+                            </span>
+			            </div>
+                    </div>
+                    <ul class="hor inlineblock et-announce mr-15 col-r">
+                        <li>
+                            <a class="et-icon-mail"><span class="et-announce-num et-circle">3</span></a>
+                        </li>
+                        <li>
+                            <a class="et-icon-horn"></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </header>
+    <div id="et-profilebar" class="et-profilebar-hide">
+        <div class="et-pagewidth cf">
+            <div class="et-profilebar-task et-rdrect et-rdrect-29 et-rdrect-pewter et-rdrect-nowrap-container hand valign-m">
+			    <div class="et-rdrect-l">
+                    <span class="txt-12 cyan bold valign-m ml-8">Today's tasks</span>
+                    <span class="et-rdrect et-circle et-rdrect-indigo-concave valign-m ml-13 mr-5">
+                        <span class="et-icon-9x9 et-icon-arrow-whi-r"></span>
+                    </span>
+			    </div>
+            </div>
+            <div class="et-profilebar-challenge et-rdrect et-rdrect-29 et-rdrect-dark et-rdrect-nowrap-container hand valign-m ml-10 pos-rel">
+                <div class="pos-abs et-rdrect et-rdrect-29 et-profilebar-challenge-progressbar"></div>
+			    <div class="et-rdrect-l">
+                    <span class="txt-13 cyan bold valign-m ml-8">Challenges</span>
+                    <img src="_styles/vstyle/i/icon_star.png" width="11" height="11" alt="Challenges" class="valign-m ml-18" />
+                    <span class="et-profilebar-challenge-progresstext txt-13 cyan bold valign-m ml-3">35</span>
+                    <span class="et-rdrect et-circle et-rdrect-indigo-concave valign-m ml-13 mr-5">
+                        <span class="et-icon-9x9 et-icon-arrow-whi-r"></span>
+                    </span>
+			    </div>
+            </div>
+            <div class="et-profilebar-mybooking et-rdrect et-rdrect-29 et-rdrect-dark et-rdrect-nowrap-container hand valign-m ml-10">
+			    <div class="et-rdrect-l">
+                    <span class="txt-13 cyan bold valign-m ml-8">My bookings</span>
+                    <span class="et-announce-num et-circle ml-25 valign-m txt-12">3</span>
+                    <span class="et-rdrect et-circle et-rdrect-indigo-concave valign-m ml-13 mr-5">
+                        <span class="et-icon-9x9 et-icon-arrow-whi-r"></span>
+                    </span>
+			    </div>
+            </div>
+            <div class="et-profilebar-links col-r valign-m">
+                <a class="et-profilebar-myprofile">My profile</a>
+                <span>&nbsp;|&nbsp;</span>
+                <a class="et-profilebar-setting">Settings</a>
+                <span>&nbsp;|&nbsp;</span>
+                <a class="et-profilebar-logout">Logout</a>
+            </div>
+			<span class="valign-m-help">&nbsp;</span>
+        </div>
+    </div>
     <div id="et-content">
         <div class="et-pagewidth cf">
             <div style="height: 150px;"></div>
@@ -162,7 +207,7 @@
 			        <div class="et-rdrect-l">
                         <img src="_styles/vstyle/i/flag_usa.png" width="16" height="11" alt="American English" class="valign-m ml-10" />
                         <span class="txt-13 cyan bold valign-m ml-8" style="color: #4c5765;">Change language</span>
-                        <span class="et-rdrect et-circle et-rdrect-indigo valign-m ml-13 mr-5">
+                        <span class="et-rdrect et-circle et-rdrect-indigo-concave valign-m ml-13 mr-5">
                             <span class="et-icon-9x9 et-icon-arrow-whi-b"></span>
                         </span>
 			        </div>

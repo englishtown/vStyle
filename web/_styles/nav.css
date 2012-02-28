@@ -21,15 +21,23 @@
 
 .et-nav-subcontainer
 {
-    padding: 4px 3px 3px 14px;
-    display: none;
+    visibility: hidden;
     position: absolute;
-    left: -14px;
+        
+    padding: 4px 3px 3px 14px;
+    left: -30px;
+        
     background: url(../_imgs/bg_nav_subcontainer.png) 0 4px no-repeat;
+        
+    transition: left .4s;
+    -moz-transition: left .4s;
+    -webkit-transition: left .4s;
+    -o-transition: left .4s;
 }
 .et-nav-main li:hover .et-nav-subcontainer
 {
-    display: block;
+    left: -14px;
+    visibility: visible;
 }
 .et-nav-sc-main
 {

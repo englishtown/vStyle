@@ -76,4 +76,59 @@
 
 };
 
-signuplogin($("#et-signuplogin"));
+var $elHeader = $("#et-header"),
+    $elSignupLogin = $("#et-signuplogin");
+
+signuplogin($elSignupLogin);
+
+
+var $elHeaderProfile = $elHeader.find(".et-header-profile"),
+    $elHeaderPicname = $elHeaderProfile.find(".et-header-picname"),
+    $elHeaderPicnameIcon = $elHeaderPicname.find(".et-circle"),
+    $elHeaderPicnameIconDirection = $elHeaderPicnameIcon.find("> span"),
+    $elProfileBar = $("#et-profilebar");
+
+$elSignupLogin.find(".et-btn-login").click(function () {
+    $elSignupLogin.hide();
+    $elHeader.find(".et-header-hotline").hide();
+    $elHeaderProfile.show();
+});
+
+$elHeaderPicname.click(function () {
+    var $this = $(this),
+        normalClass = "et-rdrect-whi",
+        activeClass = "et-rdrect-lightgra",
+        normalIconClass = "et-rdrect-indigo-concave",
+        activeIconClass = "et-rdrect-ora-concave",
+        normalDirectionClass = "et-icon-arrow-whi-b",
+        activeDirectionClass = "et-icon-arrow-whi-t",
+        normalProfileClass = "et-profilebar-hide",
+        activeProfileClass = "et-profilebar-show";
+    if ($this.hasClass(activeClass)) {
+        $this.removeClass(activeClass).addClass(normalClass);
+        $elHeaderPicnameIcon.removeClass(activeIconClass).addClass(normalIconClass);
+        $elHeaderPicnameIconDirection.removeClass(activeDirectionClass).addClass(normalDirectionClass);
+        $elProfileBar.removeClass(activeProfileClass).addClass(normalProfileClass);
+    }
+    else {
+        $this.removeClass(normalClass).addClass(activeClass);
+        $elHeaderPicnameIcon.removeClass(normalIconClass).addClass(activeIconClass);
+        $elHeaderPicnameIconDirection.removeClass(normalDirectionClass).addClass(activeDirectionClass);
+        $elProfileBar.removeClass(normalProfileClass).addClass(activeProfileClass);
+    }
+});
+
+$elProfileBar.find(".et-profilebar-logout").click(function () {
+    location.reload();
+});
+
+$elProfileBar.find(".et-profilebar-challenge").toggle(
+    function () {
+        $(this).find(".et-profilebar-challenge-progresstext").text(95);
+        $(this).find(".et-profilebar-challenge-progressbar").width("95%");
+    },
+    function () {
+        $(this).find(".et-profilebar-challenge-progresstext").text(35);
+        $(this).find(".et-profilebar-challenge-progressbar").width("35%");
+    }
+);
