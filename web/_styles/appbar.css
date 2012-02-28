@@ -14,56 +14,61 @@
     color: #c9d1df;
 }
 
-.et-appbar-map,
-.et-appbar-folder,
-.et-appbar-msg,
-.et-appbar-search,
-.et-appbar-trans
+.et-appbar-help li
 {
-    width: 3em;
+    margin: 0 1px;
+}
+.et-appbar-help li:hover
+{
+    background-color: rgba(34, 36, 39, 0.5);
+    border-radius: 3px;
+}
+.et-appbar-help-icon
+{
+    width: 2.8em;
     display: block;
     cursor: pointer;
-    height: 44px;
+    height: 2.8em;
     background-repeat: no-repeat;
     background-position: center center;
 }
-.et-appbar-map
+.et-appbar-map .et-appbar-help-icon
 {
     background-image: url(../_imgs/icon_appbar_map.png);
 }
-.et-appbar-folder
+.et-appbar-folder .et-appbar-help-icon
 {
     background-image: url(../_imgs/icon_appbar_folder.png);
 }
-.et-appbar-msg
+.et-appbar-msg .et-appbar-help-icon
 {
     background-image: url(../_imgs/icon_appbar_msg.png);
 }
-.et-appbar-search
+.et-appbar-search .et-appbar-help-icon
 {
     background-image: url(../_imgs/icon_appbar_search.png);
 }
-.et-appbar-trans
+.et-appbar-trans .et-appbar-help-icon
 {
     background-image: url(../_imgs/icon_appbar_trans.png);
 }
-.et-appbar-map:hover
+.et-appbar-map .et-appbar-help-icon:hover
 {
     background-image: url(../_imgs/icon_appbar_map_active.png);
 }
-.et-appbar-folder:hover
+.et-appbar-folder .et-appbar-help-icon:hover
 {
     background-image: url(../_imgs/icon_appbar_folder_active.png);
 }
-.et-appbar-msg:hover
+.et-appbar-msg .et-appbar-help-icon:hover
 {
     background-image: url(../_imgs/icon_appbar_msg_active.png);
 }
-.et-appbar-search:hover
+.et-appbar-search .et-appbar-help-icon:hover
 {
     background-image: url(../_imgs/icon_appbar_search_active.png);
 }
-.et-appbar-trans:hover
+.et-appbar-trans .et-appbar-help-icon:hover
 {
     background-image: url(../_imgs/icon_appbar_trans_active.png);
 }

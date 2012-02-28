@@ -100,18 +100,4 @@
 .et-profilebar-challenge-progressbar
 {
     width: 35%;
-    left: 0;
-    top: 0;
-    border-radius: 16px 0 0 16px;
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.38) inset;
-    background: url(../_imgs/bg_profilebar_progress.png) no-repeat left center;
-    
-    transition: width 0.2s ease 0s;
-    -moz-transition: width 0.2s ease 0s;
-    -webkit-transition: width 0.2s ease 0s;
-    -o-transition: width 0.2s ease 0s;
-}
-.et-profilebar-challenge .et-rdrect-l
-{
-    position: relative;
 }

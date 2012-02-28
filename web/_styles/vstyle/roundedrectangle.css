@@ -603,3 +603,24 @@ a.et-rdrect-ora-concave:active
     overflow: hidden;
     padding: 0 5px;
 }
+
+/* - Progress */
+.et-rdrect-progressbar
+{
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 16px 0 0 16px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.38) inset;
+    background: url(i/bg_progressbar.png) no-repeat left center;
+    
+    transition: width 0.2s ease 0s;
+    -moz-transition: width 0.2s ease 0s;
+    -webkit-transition: width 0.2s ease 0s;
+    -o-transition: width 0.2s ease 0s;
+}
+.et-rdrect-progressbar + .et-rdrect-l
+{
+    position: relative;
+}
