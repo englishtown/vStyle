@@ -19,40 +19,40 @@
     
 	color: #fff;
 	text-shadow: 0 1px 0 rgba(134, 61, 6, 0.75);
-	border: 1px solid #353e4b;
+	border: 1px solid rgba(30, 38, 49, 0.52);
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.47) inset, 0 0 5px rgba(255, 255, 255, 0.17);
 	
 	/* Regular color */
-	background-color: #ff9006;
+	background-color: #ff6304;
 	/* CSS3 background */
-	background-image: linear-gradient(bottom, #ff7502 0%, #ff9006 100%);
-	background-image: -o-linear-gradient(bottom, #ff7502 0%, #ff9006 100%);
-	background-image: -moz-linear-gradient(bottom, #ff7502 0%, #ff9006 100%);
-	background-image: -webkit-linear-gradient(bottom, #ff7502 0%, #ff9006 100%);
-	background-image: -ms-linear-gradient(bottom, #ff7502 0%, #ff9006 100%);
+	background-image: linear-gradient(bottom, #ff9006 0%, #ff7502 100%);
+	background-image: -o-linear-gradient(bottom, #ff9006 0%, #ff7502 100%);
+	background-image: -moz-linear-gradient(bottom, #ff9006 0%, #ff7502 100%);
+	background-image: -webkit-linear-gradient(bottom, #ff9006 0%, #ff7502 100%);
+	background-image: -ms-linear-gradient(bottom, #ff9006 0%, #ff7502 100%);
 	background-image: -webkit-gradient(
 		linear,
 		left bottom,
 		left top,
-		color-stop(0, #ff7502),
-		color-stop(1, #ff9006)
+		color-stop(0, #ff9006),
+		color-stop(1, #ff7502)
 	);
 }
     /* for IE6 */
     * html .et-chk-ora
     {
-	    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff9006, endColorstr=#ff7502);
+	    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff7502, endColorstr=#ff9006);
     }
     /* for IE7 */
     *+html .et-chk-ora
     {
-	    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff9006, endColorstr=#ff7502);
+	    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff7502, endColorstr=#ff9006);
     }
     /* for IE8, going last */
     @media \0screen {
 	    .et-chk-ora
 	    {
-	        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff9006, endColorstr=#ff7502)";    
+	        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff7502, endColorstr=#ff9006)";    
 	    }
     }
 .et-chk-dial

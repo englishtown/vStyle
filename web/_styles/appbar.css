@@ -1,0 +1,69 @@
+﻿#et-appbar
+{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    background: url(../_imgs/bg_appbar.png) repeat-x left top;
+}
+
+.et-appbar-statustext
+{
+    color: #c9d1df;
+}
+
+.et-appbar-map,
+.et-appbar-folder,
+.et-appbar-msg,
+.et-appbar-search,
+.et-appbar-trans
+{
+    width: 3em;
+    display: block;
+    cursor: pointer;
+    height: 44px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.et-appbar-map
+{
+    background-image: url(../_imgs/icon_appbar_map.png);
+}
+.et-appbar-folder
+{
+    background-image: url(../_imgs/icon_appbar_folder.png);
+}
+.et-appbar-msg
+{
+    background-image: url(../_imgs/icon_appbar_msg.png);
+}
+.et-appbar-search
+{
+    background-image: url(../_imgs/icon_appbar_search.png);
+}
+.et-appbar-trans
+{
+    background-image: url(../_imgs/icon_appbar_trans.png);
+}
+.et-appbar-map:hover
+{
+    background-image: url(../_imgs/icon_appbar_map_active.png);
+}
+.et-appbar-folder:hover
+{
+    background-image: url(../_imgs/icon_appbar_folder_active.png);
+}
+.et-appbar-msg:hover
+{
+    background-image: url(../_imgs/icon_appbar_msg_active.png);
+}
+.et-appbar-search:hover
+{
+    background-image: url(../_imgs/icon_appbar_search_active.png);
+}
+.et-appbar-trans:hover
+{
+    background-image: url(../_imgs/icon_appbar_trans_active.png);
+}

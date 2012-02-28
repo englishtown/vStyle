@@ -124,8 +124,8 @@ $elProfileBar.find(".et-profilebar-logout").click(function () {
 
 $elProfileBar.find(".et-profilebar-challenge").toggle(
     function () {
-        $(this).find(".et-profilebar-challenge-progresstext").text(95);
-        $(this).find(".et-profilebar-challenge-progressbar").width("95%");
+        $(this).find(".et-profilebar-challenge-progresstext").text(90);
+        $(this).find(".et-profilebar-challenge-progressbar").width("90%");
     },
     function () {
         $(this).find(".et-profilebar-challenge-progresstext").text(35);
