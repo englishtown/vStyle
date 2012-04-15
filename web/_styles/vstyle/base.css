@@ -68,6 +68,9 @@ a.ndr:hover     {   text-decoration: none;  }
 .nowrap         {   white-space: nowrap;    }
 .justify        {   text-align: justify;    }
 
+/* - html5 */
+article, aside, dialog, footer, header, section, footer, nav, figure, menu  {   display: block; }
+
 /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
 /* - Opacity */
 .alpha90    {   opacity: 0.9; filter: alpha(opacity=90);    }
@@ -170,6 +173,23 @@ html        {   -webkit-text-size-adjust: none;     }
 .mr-40      {   margin-right: 40px; }
 .mr-45      {   margin-right: 45px; }
 .mr-50      {   margin-right: 50px; }
+.mr-60      {   margin-right: 60px; }
+.mr-70      {   margin-right: 70px; }
+.mr-80      {   margin-right: 80px; }
+
+/* - Column(12 grid) */
+.grid-1     {   width: 08.33%;  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.grid-2     {   width: 16.66%;  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.grid-3     {   width: 25.00%;  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.grid-4     {   width: 33.33%;  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.grid-5     {   width: 41.66%;  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.grid-6     {   width: 50.00%;  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.grid-7     {   width: 58.33%;  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.grid-8     {   width: 66.66%;  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.grid-9     {   width: 75.00%;  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.grid-10    {   width: 83.33%;  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.grid-11    {   width: 91.66%;  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.grid-12    {   width: 100.0%;  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 /* - Text Color */
 .whi,
